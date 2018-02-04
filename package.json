@@ -1,0 +1,29 @@
+{
+  "name": "nimbl-renderer",
+  "version": "1.0.0",
+  "description": "renderer used by nimbl",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.2",
+    "highlight.js": "^9.12.0",
+    "katex": "^0.9.0-beta1",
+    "linkify-it": "^2.0.3",
+    "markdown-it": "^8.4.0",
+    "markdown-it-container": "^2.0.0",
+    "markdown-it-mark": "^2.0.0",
+    "markdown-it-smartarrows": "^1.0.1",
+    "markdown-it-table-of-contents": "^0.3.3",
+    "markdown-it-task-checkbox": "^1.0.6",
+    "mathjs": "^3.20.1",
+    "mime": "^2.2.0",
+    "request": "^2.83.0",
+    "string": "^3.3.3",
+    "sync-request": "^5.0.0",
+    "url": "^0.11.0"
+  }
+}
