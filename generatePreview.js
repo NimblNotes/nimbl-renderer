@@ -36,7 +36,7 @@ let cache = {};
 
 const generatePreview = url => {
   // fetches the provided url
-  if (cache.hasOwnProperty(url)) return resolve(cache[url]);
+  if (cache.hasOwnProperty(url)) return cache[url];
 
   try {
     body = request("GET", url, { timeout: 10000 }).getBody();

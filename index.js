@@ -259,7 +259,7 @@ let newMd = (opts, workingDir) => {
     // load local files
     if (fs.existsSync(path.join(workingDir, src))) {
       // relative path
-      const mimeLookup = mime.lookup(path.join(workingDir, src));
+      const mimeLookup = mime.getType(path.join(workingDir, src));
       if (mimeLookup.startsWith("image")) {
         tokens[idx].attrSet(
           "src",
@@ -271,7 +271,7 @@ let newMd = (opts, workingDir) => {
       }
     } else if (fs.existsSync(src)) {
       // absolute path
-      const mimeLookup = mime.lookup(src);
+      const mimeLookup = mime.getType(src);
       if (mimeLookup.startsWith("image")) {
         tokens[idx].attrSet(
           "src",

@@ -23,11 +23,4 @@ const mdRenderer = require("./index")(
   "."
 );
 
-console.log(
-  mdRenderer.render(`
-### Ehi
-**aaa**
-
-https://medium.freecodecamp.org/how-can-your-phone-open-medium-com-62ec36b1429f
-`)
-);
+console.log(mdRenderer.render("aaa"));
